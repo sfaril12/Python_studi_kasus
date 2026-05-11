@@ -1,5 +1,5 @@
 from datetime import datetime
-
+import os
 class Kendaraan:
     
     def __init__(self, plat, jenis):
@@ -79,14 +79,14 @@ while True:
     pilih = input("Pilih menu : ")
 
     if pilih == "1":
-        parkiran.kendaraan_masuk()
-
+        parkiran.kendaraan_masuk()    
+        os.system('cls' if os.name == 'nt' else 'clear')
     elif pilih == "2":
         parkiran.tampilkan_kendaraan()
-
+        os.system('cls' if os.name == 'nt' else 'clear')
     elif pilih == "3":
         parkiran.kendaraan_keluar()
-
+        os.system('cls' if os.name == 'nt' else 'clear')
     elif pilih == "4":
         print("Program selesai")
         break
