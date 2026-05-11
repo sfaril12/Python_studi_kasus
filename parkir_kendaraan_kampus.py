@@ -79,13 +79,16 @@ while True:
     pilih = input("Pilih menu : ")
 
     if pilih == "1":
-        parkiran.kendaraan_masuk()    
+        parkiran.kendaraan_masuk()
+        input()
         os.system('cls' if os.name == 'nt' else 'clear')
     elif pilih == "2":
         parkiran.tampilkan_kendaraan()
+        input()
         os.system('cls' if os.name == 'nt' else 'clear')
     elif pilih == "3":
         parkiran.kendaraan_keluar()
+        input()
         os.system('cls' if os.name == 'nt' else 'clear')
     elif pilih == "4":
         print("Program selesai")
